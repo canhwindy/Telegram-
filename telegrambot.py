@@ -1,7 +1,7 @@
 from telethon import TelegramClient, events
 
 
-client = TelegramClient('bot', 22777358, '07f1cf2a58197314cef85f21de01417a').start(bot_token='6282580971:AAGoFNxHMrQIJDGI2BoGbb7mQskQtsE9zrE')
+client = TelegramClient('bot', App api_id, App api_hash).start(bot_token='bot_token')
 
 @client.on(events.NewMessage(pattern='/mentionwindy'))
 async def mention_all(event):
